@@ -89,19 +89,19 @@ function handleNextQuestion() {
         if (isCorrect) {
             score++;
         }
-        currentQuestionIndex++;
-
-        if (currentQuestionIndex < questions.length) {
-            showQuestion(questions[currentQuestionIndex]);
-        } else {
-            showResult();
-        }
+    } else {
+        // If no answer is selected, end the quiz
+        showResult();
+        return;
     }
-}
 
-// Handle answer button clicks
-function handleAnswerClick() {
-    // Do nothing, the "Next Question" button handles the action now
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < questions.length) {
+        showQuestion(questions[currentQuestionIndex]);
+    } else {
+        showResult();
+    }
 }
 
 // Display quiz result
@@ -137,12 +137,15 @@ startQuizButton.addEventListener('click', async function () {
 // Timer functions
 function startTimer() {
     let timeLeft = QUESTION_TIMEOUT;
+    timerElement.innerHTML = `Time left: ${timeLeft} seconds`;
     timerInterval = setInterval(() => {
-        timerElement.innerHTML = `Time left: ${timeLeft} seconds`;
         timeLeft--;
 
-        if (timeLeft < 0) {
-            handleNextQuestion(); // Move to the next question as time is up
+        if (timeLeft >= 0) {
+            timerElement.innerHTML = `Time left: ${timeLeft} seconds`;
+        } else {
+            clearInterval(timerInterval); // Stop the timer
+            handleNextQuestion(); // Move to the next question as time is up and no answer is selected
         }
     }, 1000);
 }
