@@ -1,14 +1,18 @@
 body {
     font-family: Rubik, sans-serif;
     font-size: 16px;
-    background-color: rgb(70, 154, 214);
+    background-color: rgba(105, 167, 210, 0.973);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h1 {
     font-family: Spectral, serif;
     font-size: 46px;
     text-align: center;
-
 }
 
 h2 {
@@ -16,31 +20,91 @@ h2 {
 }
 
 .container {
+    position: relative;
     max-width: 600px;
-    margin: 0 auto;
     padding: 20px;
-    border: 1px solid rgb(70, 154, 214);
+    border: 1px solid rgba(105, 167, 210, 0.973);
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: rgb(218, 134, 213);
+}
+
+#timer {
+    position: absolute;
+    /* Position the timer */
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
 }
 
 #question-container {
     text-align: left;
+    margin-bottom: 30px;
+    /* Add margin to give space between question and timer */
 }
 
 #answer-buttons {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
+    /* Add margin between question and answer options */
 }
 
-#answer-buttons li {
-    margin: 10px 0;
+.answer-option {
+    display: flex;
+    align-items: center;
+}
+
+.answer-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.answer-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.next-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background-color: #45a049;
 }
 
 #submit-button {
     margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #result {
     margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
 }

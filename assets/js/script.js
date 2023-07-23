@@ -29,45 +29,79 @@ async function getQuestions() {
 
 // Display the current question and answers
 function showQuestion(question) {
-    questionElement.textContent = question.question;
-    timerElement.textContent = `Time left: ${QUESTION_TIMEOUT} seconds`;
+    questionElement.innerHTML = decodeHtmlEntities(question.question);
+    timerElement.innerHTML = `Time left: ${QUESTION_TIMEOUT} seconds`;
 
-    // Clear previous answer buttons
+    // Clear previous answer options and hide the result element
     answerButtonsElement.innerHTML = '';
+    resultElement.style.display = 'none';
 
-    // Combine correct and incorrect answers for random order
-    const answers = [...question.incorrect_answers, question.correct_answer];
-    answers.sort(() => Math.random() - 0.5);
+    // Create and append answer options with radio buttons
+    const answers = shuffle([...question.incorrect_answers, question.correct_answer]);
 
-    // Create and append answer buttons
-    answers.forEach((answer) => {
-        const button = document.createElement('button');
-        button.textContent = answer;
-        button.classList.add('answer-btn');
-        button.addEventListener('click', () => handleAnswerClick(answer === question.correct_answer));
-        answerButtonsElement.appendChild(button);
+    answers.forEach((answer, index) => {
+        const answerOption = document.createElement('div');
+        answerOption.classList.add('answer-option');
+
+        const radioButton = document.createElement('input');
+        radioButton.type = 'radio';
+        radioButton.name = 'answer';
+        radioButton.id = `answer-${index}`;
+        radioButton.value = answer;
+        answerOption.appendChild(radioButton);
+
+        const label = document.createElement('label');
+        label.setAttribute('for', `answer-${index}`);
+        label.innerHTML = decodeHtmlEntities(answer);
+        answerOption.appendChild(label);
+
+        answerButtonsElement.appendChild(answerOption);
+    });
+
+    // Create the "Next Question" button
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'Next Question';
+    nextButton.classList.add('next-btn');
+    nextButton.addEventListener('click', handleNextQuestion);
+    nextButton.disabled = true; // Disable the button initially
+    answerButtonsElement.appendChild(nextButton);
+
+    // Enable the "Next Question" button when an answer is selected
+    const answerOptions = document.querySelectorAll('input[name="answer"]');
+    answerOptions.forEach((option) => {
+        option.addEventListener('change', () => {
+            nextButton.disabled = false;
+        });
     });
 
     // Start the timer for this question
     startTimer();
 }
 
-// Handle answer button clicks
-function handleAnswerClick(isCorrect) {
-    if (isCorrect) {
-        score++;
-    }
-
-    // Clear the timer for this question
+// Handle the "Next Question" button click
+function handleNextQuestion() {
+    // Clear the timer for the current question
     clearInterval(timerInterval);
 
-    currentQuestionIndex++;
+    const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    if (selectedAnswer) {
+        const isCorrect = selectedAnswer.value === questions[currentQuestionIndex].correct_answer;
+        if (isCorrect) {
+            score++;
+        }
+        currentQuestionIndex++;
 
-    if (currentQuestionIndex < questions.length) {
-        showQuestion(questions[currentQuestionIndex]);
-    } else {
-        showResult();
+        if (currentQuestionIndex < questions.length) {
+            showQuestion(questions[currentQuestionIndex]);
+        } else {
+            showResult();
+        }
     }
+}
+
+// Handle answer button clicks
+function handleAnswerClick() {
+    // Do nothing, the "Next Question" button handles the action now
 }
 
 // Display quiz result
@@ -104,11 +138,27 @@ startQuizButton.addEventListener('click', async function () {
 function startTimer() {
     let timeLeft = QUESTION_TIMEOUT;
     timerInterval = setInterval(() => {
-        timerElement.textContent = `Time left: ${timeLeft} seconds`;
+        timerElement.innerHTML = `Time left: ${timeLeft} seconds`;
         timeLeft--;
 
         if (timeLeft < 0) {
-            handleAnswerClick(false); // Move to the next question as time is up
+            handleNextQuestion(); // Move to the next question as time is up
         }
     }, 1000);
+}
+
+// Shuffle array function
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+// Function to decode HTML entities (e.g., &amp;, &lt;, etc.)
+function decodeHtmlEntities(text) {
+    const textarea = document.createElement('textarea');
+    textarea.innerHTML = text;
+    return textarea.value;
 }
