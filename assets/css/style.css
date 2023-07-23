@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#question-container {
+    text-align: left;
+}
+
+#answer-buttons {
+    list-style-type: none;
+    padding: 0;
+}
+
+#answer-buttons li {
+    margin: 10px 0;
+}
+
+#submit-button {
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 20px;
+}
