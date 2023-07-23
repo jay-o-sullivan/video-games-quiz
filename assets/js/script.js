@@ -14,6 +14,11 @@ const timerElement = document.getElementById('timer');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const submitButton = document.getElementById('submit-button');
 const resultElement = document.getElementById('result');
+const usernameInput = document.getElementById('username');
+const submitScoreButton = document.getElementById('submit-score');
+const restartQuizButton = document.getElementById('restart-quiz-button');
+const leaderboardButton = document.getElementById('leaderboard-button');
+
 
 // Fetch questions from the API
 async function getQuestions() {
@@ -108,8 +113,28 @@ function handleNextQuestion() {
 function showResult() {
     questionContainer.style.display = 'none';
     submitButton.style.display = 'none';
-    resultElement.textContent = `Your score: ${score} out of ${questions.length}`;
+
+    const scoreElement = document.getElementById('score');
+    const totalQuestionsElement = document.getElementById('totalQuestions');
+    scoreElement.textContent = score;
+    totalQuestionsElement.textContent = questions.length;
     resultElement.style.display = 'block';
+    // Show the "Restart Quiz" and "Check Leaderboard" buttons
+    restartQuizButton.style.display = 'block';
+    leaderboardButton.style.display = 'block';
+}
+
+// Function to handle score submission
+function submitScore() {
+    const username = usernameInput.value.trim();
+    if (username === '') {
+        alert('Please enter your username to submit the score.');
+        return;
+    }
+
+    alert(`Score submitted!\nUsername: ${username}\nScore: ${score}/${questions.length}`);
+
+    usernameInput.value = '';
 }
 
 // Show rules section and start the quiz when the "Start" button is pressed
@@ -165,3 +190,22 @@ function decodeHtmlEntities(text) {
     textarea.innerHTML = text;
     return textarea.value;
 }
+
+
+
+submitScoreButton.addEventListener('click', submitScore);
+// Add event listener for the "Restart Quiz" button
+restartQuizButton.addEventListener('click', () => {
+    currentQuestionIndex = 0;
+    score = 0;
+    resultElement.style.display = 'none';
+    startSection.style.display = 'block';
+    questionContainer.style.display = 'none';
+});
+
+// Add event listener for the "Check Leaderboard" button
+leaderboardButton.addEventListener('click', () => {
+    // Implement the functionality to check the leaderboard here
+    // For now, let's just show an alert
+    alert('Leaderboard functionality will be implemented here.');
+});
