@@ -6,6 +6,8 @@ let score = 0;
 let timerInterval;
 
 const startButton = document.getElementById('start-button');
+const startSection = document.getElementById('start-section');
+const rulesSection = document.getElementById('rules-section');
 const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const timerElement = document.getElementById('timer');
@@ -76,13 +78,21 @@ function showResult() {
     resultElement.style.display = 'block';
 }
 
-// Start the quiz when the "Start" button is pressed
+// Show rules section and start the quiz when the "Start" button is pressed
 let questions = [];
 
-startButton.addEventListener('click', async function () {
+startButton.addEventListener('click', function () {
+    startSection.style.display = 'none';
+    rulesSection.style.display = 'block';
+});
+
+// Start the quiz when the "Start Quiz" button is pressed
+const startQuizButton = document.getElementById('start-quiz-button');
+
+startQuizButton.addEventListener('click', async function () {
     questions = await getQuestions();
     if (questions.length > 0) {
-        startButton.style.display = 'none';
+        rulesSection.style.display = 'none';
         questionContainer.style.display = 'block';
         showQuestion(questions[currentQuestionIndex]);
     } else {

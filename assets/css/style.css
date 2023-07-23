@@ -1,14 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    background-color: rgb(70, 154, 214);
+}
+
+h1 {
+    font-family: Spectral, serif;
+    font-size: 46px;
     text-align: center;
+
+}
+
+h2 {
+    font-family: Spectral, serif;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(70, 154, 214);
     border-radius: 10px;
+    background-color: lightcoral;
 }
 
 #question-container {
