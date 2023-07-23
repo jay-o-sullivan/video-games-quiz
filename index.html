@@ -12,7 +12,20 @@
 <body>
     <div class="container">
         <h1>Video Games Quiz</h1>
-        <button id="start-button">Start Quiz</button>
+        <div id="start-section">
+            <button id="start-button">Start Quiz</button>
+        </div>
+        <div id="rules-section" style="display: none;">
+            <h2>Quiz Rules</h2>
+            <p>Here are the rules for the quiz:</p>
+            <ul>
+                <li>There are 10 questions in the quiz.</li>
+                <li>You have 10 seconds to answer each question.</li>
+                <li>The quiz will automatically move to the next question if the time elapses.</li>
+                <li>Click the correct answer to score a point.</li>
+            </ul>
+            <button id="start-quiz-button">Start Quiz</button>
+        </div>
         <div id="question-container" style="display: none;">
             <p id="question"></p>
             <div id="timer"></div>
