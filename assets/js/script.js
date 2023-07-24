@@ -132,9 +132,34 @@ function submitScore() {
         return;
     }
 
+    const scoreData = {
+        username: username,
+        score: score,
+    };
+
+    // Retrieve the existing high scores from LocalStorage
+    let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+    // Add the current score to the list of high scores
+    highScores.push(scoreData);
+
+    // Sort the high scores in descending order based on the score
+    highScores.sort((a, b) => b.score - a.score);
+
+    // Keep only the top 10 high scores
+    highScores = highScores.slice(0, 10);
+
+    // Save the updated high scores back to LocalStorage
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+
+    // Show an alert with the submitted username and score
     alert(`Score submitted!\nUsername: ${username}\nScore: ${score}/${questions.length}`);
 
+    // Clear the input field
     usernameInput.value = '';
+
+    // Hide the "Submit Score" button after submitting
+    submitScoreButton.style.display = 'none';
 }
 
 // Show rules section and start the quiz when the "Start" button is pressed
@@ -205,7 +230,20 @@ restartQuizButton.addEventListener('click', () => {
 
 // Add event listener for the "Check Leaderboard" button
 leaderboardButton.addEventListener('click', () => {
-    // Implement the functionality to check the leaderboard here
-    // For now, let's just show an alert
-    alert('Leaderboard functionality will be implemented here.');
+    // Retrieve the high scores from LocalStorage
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+    // Show the leaderboard
+    showLeaderboard(highScores);
 });
+
+// Function to show the leaderboard
+function showLeaderboard(highScores) {
+    // Display the leaderboard data as needed (e.g., create a new HTML element to show the leaderboard)
+    // For now, let's just show an alert with the top 10 high scores
+    let leaderboardMessage = 'Top 10 High Scores:\n\n';
+    for (let i = 0; i < highScores.length; i++) {
+        leaderboardMessage += `${i + 1}. ${highScores[i].username} - ${highScores[i].score}\n`;
+    }
+    alert(leaderboardMessage);
+}
