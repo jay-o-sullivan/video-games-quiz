@@ -45,7 +45,7 @@ h2 {
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
-    /* Add margin between question and answer options */
+
 }
 
 .answer-option {
@@ -126,3 +126,50 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+.footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #d0d0d0;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.social-media-icons a {
+    margin: 0 5px;
+    color: #d0d0d0;
+    font-size: 18px;
+}
+
+/* Space and style the buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(105, 167, 210, 0.973);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: rgba(105, 167, 210, 0.8);
+}
