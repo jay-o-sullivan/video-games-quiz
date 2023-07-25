@@ -25,7 +25,7 @@ Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your k
 ## Wireframes
 
 - The wireframes below is of the website on a android phone, desktop and ipad.
-  - [wireframes](assets/images/ms2-wireframes.pdf)
+  - [wireframes](assets/images/project-2.pdf)
 
 
 ## Features
@@ -149,7 +149,7 @@ Structure and content based heavily on:
 
   - [Code Institute Solutions - README Template](https://github.com/Code-Institute-Solutions/readme-template)
   - [W3 Schools](https://www.w3schools.com/) 
-  - [Youtube]([https://www.youtube.com/watch?v=POX3dT-pB4E](https://www.youtube.com/watch?v=-cX5jnQgqSM)https://www.youtube.com/watch?v=-cX5jnQgqSM) Open API
+  - [Youtube](https://www.youtube.com/watch?v=-cX5jnQgqSM) Open API
   - [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo) Timer
 
 ### Media
