@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Games Quiz</title>
+    <title>Controller Chronicles: Gaming Quiz</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -16,12 +16,14 @@
 
 <body>
     <div class="container">
-        <h1>Video Games Quiz</h1>
+        <h1><i class="fas fa-gamepad"></i>Controller Chronicles</h1>
+
+
         <div id="start-section">
             <button id="start-button">Start Quiz</button>
         </div>
         <div id="rules-section" style="display: none;">
-            <h2>Quiz Rules</h2>
+            <h2>Quiz Rules<i class="fa fa-question-circle" aria-hidden="true"></i></h2>
             <p>Here are the rules for the quiz:</p>
             <ul>
                 <li>There are 10 questions in the quiz.</li>
@@ -43,12 +45,20 @@
             <label for="username">Enter your username:</label>
             <input type="text" id="username" placeholder="Enter your username">
             <button id="submit-score">Submit Score</button>
-            <button id="restart-quiz-button" style="display: none;">&#8634;</button>
-            <button id="leaderboard-button" style="display: none;">&#127942;</button>
+            <div class="button-container">
+                <button id="restart-quiz-button" style="display: none;">&#8634;</button>
+                <button id="leaderboard-button" style="display: none;">&#127942;</button>
+            </div>
         </div>
 
     </div>
-
+    <div class="footer">
+        <div class="social-media-icons">
+            <a href="https://github.com/jay-o-sullivan/" class="fab fa-github"></a>
+            <a href="https://www.linkedin.com/in/jay-o-sullivan-a91995a8/" class="fab fa-linkedin"></a>
+        </div>
+        <p>&copy; 2023 Controller Chronicles</p>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
