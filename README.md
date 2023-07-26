@@ -10,12 +10,16 @@
   - [Wireframes](#wireframes)
   - [Features](#features)
     - [Future Enhancements](#future-enhancements)
+
+  - [UX Design](#ux-design)
+
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [User Stories](#user-stories)
   - [Validators Used](#validators-used)
-  - [Demo](#demo)
-    - [How To Play](#how-to-play)
+  - [Getting Started](#getting-started)
+  - [How To Play](#how-to-play)
+    - [Demo](#demo)
   - [Deployment](#deployment)
     - [GitPod](#gitpod)
   - [Run code locally](#run-code-locally)
@@ -44,6 +48,17 @@ Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your k
 - Leaderboard to display the top 10 high scores achieved by players.
 - Responsive design for seamless gameplay on different devices.
 
+
+## UX Design
+
+I have focused on providing an engaging and intuitive user experience for Controller Chronicles. Some of the key design considerations include:
+
+- A clear and prominent "Start Quiz" button to encourage users to begin the quiz.
+- Visual feedback for the timer, showing the time left for each question.
+- Visual indicators for correct and incorrect answers.
+- A result popup that displays the user's score and invites them to submit their username for the leaderboard.
+- A dedicated leaderboard popup with a clean presentation of the top 10 high scores.
+
 ### Future Enhancements
 
 - Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
@@ -55,13 +70,12 @@ Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your k
 ## Technologies Used
 
 The game is built using the following technologies:
-
-- HTML5
-- CSS3
-- JavaScript
-- External API ([Open Trivia Database](https://opentdb.com/api.php)) - For fetching quiz questions
-- Font Awesome (for icons)
-- Google Fonts (for font styles)
+- **HTML5** - The markup language used for structuring the website.
+- **CSS3** - The stylesheet language used for styling the website.
+- **JavaScript** - The programming language used for interactive elements and quiz functionality.
+- **Open Trivia Database API** - Provides quiz questions related to gaming.
+- **Font Awesome** - A library of icons used for visual enhancements.
+- **Google Fonts** - Provides custom fonts for the website, improving the typography.
 
 ## Testing
 
@@ -88,8 +102,11 @@ The game is built using the following technologies:
 
     ![image](assets/images/css-check.png)
 
-## Demo
+## Getting Started
 
+Controller Chronicles is a web-based application, and no installation is required. Simply access the website using your web browser.
+
+## Demo
 To see the live demo of the game, visit [Controller Chronicles: Gaming Quiz Demo](https://jay-o-sullivan.github.io/video-games-quiz/).
 
 ### How To Play
@@ -103,12 +120,9 @@ To see the live demo of the game, visit [Controller Chronicles: Gaming Quiz Demo
 7. You can enter your username and submit your score to be displayed on the leaderboard.
 
 
-
 ## Deployment
 
 The website was created using [CodeAnywhere](https://codeanywhere.com/).
-
-
 
 ### GitPod
 
@@ -117,16 +131,12 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
 - Choose the appropriate repository - jay-o-sullivan/video-games-quiz
 - From the menu choose the settings tab.
 - Then scroll down to github pages.
-
   ![github](assets/images/github-pages.png)
-
 - Click the visit site to view the deployed website.
-
-
 
 ## Run code locally
 
-- There is different approaches should you choose to use GitPod to clone the project, or a different IDE.
+There is different approaches should you choose to use GitPod to clone the project, or a different IDE.
   - Use web browser -- google -- firefox etc.
   - Login to your github account or sign up if you haven't.
   - Install the gitpod extenstion for your browser.
@@ -134,9 +144,7 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
   - Click on gitpod button.
   - New workspace will open containing the project code.
 
-
 ## Cloning
-
 
 1. Navigate to the github repository.
 2. Choose the dropdown on the code button.
@@ -147,15 +155,14 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
 4. Set the working directory to location.
 5. Type in "git clone" followed by the URL. Make sure to include a space after git clone for the url,   press enter.
 6. Project created.
+For more information on [GitHub](https://docs.github.com/en)
 
 
+## API
 
-
-### For more information on [GitHub](https://docs.github.com/en)
-
+Controller Chronicles fetches quiz questions from the Open Trivia Database API. The API provides a wide range of trivia questions for various categories, including gaming.
 
 ## Credits
-
 
 ### Content
 
