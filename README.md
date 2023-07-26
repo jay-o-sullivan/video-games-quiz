@@ -76,17 +76,17 @@ The game is built using the following technologies:
 
 ## Validators Used
 
-- [JSvalidator](https://jsvalidator.com/)  JavaScript validator
+- [JSvalidator](https://jsvalidator.com/)
 
-![js](assets/images/js-check.PNG)
+    ![image](assets/images/js-check.png)
 
-- [W3C](https://validator.w3.org/)   HTML validator
+- [W3C](https://validator.w3.org/)
 
-![html](assets/images/html-check.PNG)
+    ![image](assets/images/html-check.png)
 
-- [W3C](https://jigsaw.w3.org/css-validator/)   CSS validator
+- [W3C](https://jigsaw.w3.org/css-validator/)
 
-![css](assets/images/css-check.PNG)
+    ![image](assets/images/css-check.png)
 
 ## Demo
 
