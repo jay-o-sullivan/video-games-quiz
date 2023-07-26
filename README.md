@@ -102,9 +102,13 @@ To see the live demo of the game, visit [Controller Chronicles: Gaming Quiz Demo
 6. After completing all the questions, the final score will be displayed along with the number of questions answered correctly.
 7. You can enter your username and submit your score to be displayed on the leaderboard.
 
+
+
 ## Deployment
 
 The website was created using [CodeAnywhere](https://codeanywhere.com/).
+
+
 
 ### GitPod
 
@@ -118,6 +122,8 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
 
 - Click the visit site to view the deployed website.
 
+
+
 ## Run code locally
 
 - There is different approaches should you choose to use GitPod to clone the project, or a different IDE.
@@ -128,9 +134,28 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
   - Click on gitpod button.
   - New workspace will open containing the project code.
 
+
+## Cloning
+
+
+1. Navigate to the github repository.
+2. Choose the dropdown on the code button.
+
+![github](assets/images/cloning.png)
+
+3. Open your IDE and terminal.
+4. Set the working directory to location.
+5. Type in "git clone" followed by the URL. Make sure to include a space after git clone for the url,   press enter.
+6. Project created.
+
+
+
+
 ### For more information on [GitHub](https://docs.github.com/en)
 
+
 ## Credits
+
 
 ### Content
 
@@ -141,11 +166,13 @@ Structure and content based heavily on:
 - [Youtube](https://www.youtube.com/watch?v=-cX5jnQgqSM) Open API
 - [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo) Timer
 
+
 ### Media
 
 The photo used in this site were obtained from:
 
 - [am i responsive](http://ami.responsivedesign.is/)
+
 
 ## Acknowledgements
 
