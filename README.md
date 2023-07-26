@@ -59,7 +59,7 @@ The game is built using the following technologies:
 - HTML5
 - CSS3
 - JavaScript
-- Open Trivia Database API
+- External API ([Open Trivia Database](https://opentdb.com/api.php)) - For fetching quiz questions
 - Font Awesome (for icons)
 - Google Fonts (for font styles)
 
