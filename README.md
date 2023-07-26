@@ -80,7 +80,7 @@ The game is built using the following technologies:
 
     ![image](assets/images/js-check.png)
 
-- [W3C](https://validator.w3.org/)
+- [W3C](https://validator.w3.org/nu/)
 
     ![image](assets/images/html-check.png)
 
