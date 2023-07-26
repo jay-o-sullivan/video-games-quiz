@@ -114,7 +114,7 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
 - From the menu choose the settings tab.
 - Then scroll down to github pages.
 
-  ![github](assets/images/github-pages.PNG)
+  ![github](assets/images/github-pages.png)
 
 - Click the visit site to view the deployed website.
 
