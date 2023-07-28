@@ -2,41 +2,40 @@
 
 ![Am I Responsive](assets/images/am-i-responsive.png)
 
+## Introduction
+
+Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your knowledge of video games. The game presents players with a series of 10 multiple-choice questions related to video games, and they must answer each question within a time limit. The faster and more accurately they answer, the higher their score!
+
 ## Table of Contents
 
 - [Controller Chronicles: Gaming Quiz](#controller-chronicles-gaming-quiz)
-  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
   - [Wireframes](#wireframes)
   - [Features](#features)
-    - [Future Enhancements](#future-enhancements)
-
   - [UX Design](#ux-design)
-
+    - [Future Enhancements](#future-enhancements)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [User Stories](#user-stories)
   - [Validators Used](#validators-used)
   - [Getting Started](#getting-started)
-  - [How To Play](#how-to-play)
-    - [Demo](#demo)
+  - [Demo](#demo)
+    - [How To Play](#how-to-play)
   - [Deployment](#deployment)
     - [GitPod](#gitpod)
   - [Run code locally](#run-code-locally)
-    - [For more information on GitHub](#for-more-information-on-github)
+  - [Cloning](#cloning)
+  - [API](#api)
   - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
   - [Acknowledgements](#acknowledgements)
 
-## Introduction
-
-Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your knowledge of video games. The game presents players with a series of 10 multiple-choice questions related to video games, and they must answer each question within a time limit. The faster and more accurately they answer, the higher their score!
-
 ## Wireframes
 
 - The wireframes below is of the website on a android phone, desktop and ipad.
-  - [wireframes](assets/images/project-2.pdf)
+  - [wireframes](assets/images/wireframes/project-2.pdf)
 
 ## Features
 
@@ -47,7 +46,6 @@ Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your k
 - Username input for submitting high scores to the leaderboard.
 - Leaderboard to display the top 10 high scores achieved by players.
 - Responsive design for seamless gameplay on different devices.
-
 
 ## UX Design
 
