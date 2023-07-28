@@ -39,11 +39,11 @@ Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your k
 
 ## Features
 
-- 10 exciting multiple-choice questions about video games.
-- A timer of 10 seconds for each question.
-- Automatic progression to the next question when the time elapses.
-- Real-time score tracking.
-- Username input for submitting high scores to the leaderboard.
+- 10 exciting multiple-choice questions about video games. - ![question](assets/images/question.png)
+- A timer of 10 seconds for each question. - ![timer](assets/images/question.png)
+- Automatic progression to the next question when the time elapses. - ![next-question](assets/images/next-question.png)
+- Real-time score tracking. - ![score](assets/images/score.png)
+- Username input for submitting high scores to the leaderboard. - ![username](assets/images/username.png)
 - Leaderboard to display the top 10 high scores achieved by players.
 - Responsive design for seamless gameplay on different devices.
 
