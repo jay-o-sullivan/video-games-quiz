@@ -2,7 +2,7 @@
 
 ![Am I Responsive](assets/images/am-i-responsive.png)
 
-<h3>Introduction</h3>
+<h3> Introduction </h3>
 
     Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your knowledge of video games. 
     The game presents players with a series of 10 multiple-choice questions 
