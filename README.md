@@ -10,34 +10,34 @@
     The faster and more accurately they answer, the higher their score!
 
 The Colors I went with are :
-* ![Color Palette](assets/images/color-palette.png)
+![Color Palette](assets/images/color-palette.png)
 
 <br/>
 
 ## Table of Contents
 
-* [Controller Chronicles: Gaming Quiz](#controller-chronicles-gaming-quiz)
-  * [Table of Contents](#table-of-contents)
-  * [Wireframes](#wireframes)
-  * [Features](#features)
-  * [UX Design](#ux-design)
-    * [Future Enhancements](#future-enhancements)
-  * [Technologies Used](#technologies-used)
-  * [Testing](#testing)
-    * [User Stories](#user-stories)
-  * [Validators Used](#validators-used)
-  * [Getting Started](#getting-started)
-  * [Demo](#demo)
-    * [How To Play](#how-to-play)
-  * [Deployment](#deployment)
-    * [GitPod](#gitpod)
-  * [Run code locally](#run-code-locally)
-  * [Cloning](#cloning)
-  * [API](#api)
-  * [Credits](#credits)
-    * [Content](#content)
-    * [Media](#media)
-  * [Acknowledgements](#acknowledgements)
+- [Controller Chronicles: Gaming Quiz](#controller-chronicles-gaming-quiz)
+  - [Table of Contents](#table-of-contents)
+  - [Wireframes](#wireframes)
+  - [Features](#features)
+  - [UX Design](#ux-design)
+    - [Future Enhancements](#future-enhancements)
+  - [Technologies Used](#technologies-used)
+  - [Testing](#testing)
+    - [User Stories](#user-stories)
+  - [Validators Used](#validators-used)
+  - [Getting Started](#getting-started)
+  - [Demo](#demo)
+    - [How To Play](#how-to-play)
+  - [Deployment](#deployment)
+    - [GitPod](#gitpod)
+  - [Run code locally](#run-code-locally)
+  - [Cloning](#cloning)
+  - [API](#api)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
 <br/>
 
@@ -45,7 +45,7 @@ The Colors I went with are :
 
      The wireframes below is of the website.
 
-* [wireframes](assets/images/wireframes/project-2.pdf)
+- [wireframes](assets/images/wireframes/project-2.pdf)
 
 <br/>
 
@@ -53,7 +53,6 @@ The Colors I went with are :
 
     10 exciting multiple-choice questions about video games.  
 ![question](assets/images/question.png)
-
 
      A timer of 10 seconds for each question.      
 ![timer](assets/images/question.png)
@@ -80,12 +79,10 @@ The Colors I went with are :
 ![responsive](assets/images/responsive-design.png)
 <br/>
 
-
 ## UX Design
 
-<h3>I have focused on providing an engaging and intuitive user experience for Controller Chronicles.</h3> 
+<h3>I have focused on providing an engaging and intuitive user experience for Controller Chronicles.</h3>
 Some of the key design considerations include:
-
 
     1. A clear and prominent "Start Quiz" button to encourage users to begin the quiz.
     2. Visual feedback for the timer, showing the time left for each question.
@@ -93,19 +90,22 @@ Some of the key design considerations include:
     4. A result popup that displays the user's score and invites them to submit their username for the leaderboard.
     5. A dedicated leaderboard popup with a clean presentation of the top 10 high scores.
 
-
 ### Future Enhancements
+
 <blockquote>
+
      Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
      Sound Effects and Music: Enhance the user experience by adding sound effects for correct and incorrect answers.
      Accessibility: Ensure the quiz is accessible to all users.
      Review Incorrect Answers: Allow players to review their incorrect answers after completing the quiz for a learning experience.
      Randomized Questions: Randomize the order of questions to ensure a unique experience for each quiz attempt.
+
 </blockquote>
 
 ## Technologies Used
 
 The game is built using the following technologies:
+
 <blockquote>
 
 - **HTML5** - The markup language used for structuring the website.
@@ -120,6 +120,7 @@ The game is built using the following technologies:
 ## Testing
 
 ### User Stories
+
 - As a gaming enthusiast, I want to test my knowledge of video games and challenge myself with exciting quiz questions.
 - As a casual player, I want a fun and engaging quiz that is easy to understand and play.
 - As a competitive gamer, I want to see how I rank against others and have my scores displayed on the leaderboard.
@@ -145,15 +146,12 @@ The game is built using the following technologies:
 
 Controller Chronicles is a web-based application, and no installation is required. Simply access the website using your web browser.
 
-
-
 ## Demo
 
 To see the live demo of the game, visit [Controller Chronicles: Gaming Quiz Demo](https://jay-o-sullivan.github.io/video-games-quiz/).
 
-
 ### How To Play
-<blockquote>
+
     1. Click the "Start Quiz" button on the start screen to begin the quiz.
     2. Read each question carefully and select the correct answer from the multiple-choice options.
     3. You have 10 seconds to answer each question.
@@ -161,7 +159,6 @@ To see the live demo of the game, visit [Controller Chronicles: Gaming Quiz Demo
     5. If you fail to answer within the time limit, the quiz will move to the next question, and your answer will be marked as incorrect.
     6. After completing all the questions, the final score will be displayed along with the number of questions answered correctly.
     7. You can enter your username and submit your score to be displayed on the leaderboard.
-</blockquote>
 
 ## Deployment
 
@@ -181,20 +178,19 @@ The website was created using [CodeAnywhere](https://codeanywhere.com/).
 
 There is different approaches should you choose to use GitPod to clone the project, or a different IDE.
 
-  - Use web browser -- google -- firefox etc.
-  - Login to your github account or sign up if you haven't.
-  - Install the gitpod extenstion for your browser.
-  - In github find the repository.
-  - Click on gitpod button.
-  - New workspace will open containing the project code.
-
+- Use web browser -- google -- firefox etc.
+- Login to your github account or sign up if you haven't.
+- Install the gitpod extenstion for your browser.
+- In github find the repository.
+- Click on gitpod button.
+- New workspace will open containing the project code.
 
 ## Cloning
 
 1. Navigate to the github repository.
 2. Choose the dropdown on the code button.
 
-    * ![github](assets/images/cloning.png)
+    - ![github](assets/images/cloning.png)
 
 3. Open your IDE and terminal.
 4. Set the working directory to location.
@@ -202,17 +198,13 @@ There is different approaches should you choose to use GitPod to clone the proje
 6. Project created.
 For more information on [GitHub](https://docs.github.com/en)
 
-
 ## API
 
 Controller Chronicles fetches quiz questions from the Open Trivia Database API. The API provides a wide range of trivia questions for various categories, including gaming.
 
-
-
 ## Credits
 
 ### Content
-
 
 - [Code Institute Solutions - README Template](https://github.com/Code-Institute-Solutions/readme-template)
 - [W3 Schools](https://www.w3schools.com/)
@@ -220,13 +212,11 @@ Controller Chronicles fetches quiz questions from the Open Trivia Database API. 
 - [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo) Timer
 - [Coolors](https://coolors.co) Color Palette
 
-
 ### Media
 
 The photo used in this site were obtained from:
 
 - [am i responsive](http://ami.responsivedesign.is/)
-
 
 ## Acknowledgements
 
