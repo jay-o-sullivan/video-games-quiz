@@ -2,7 +2,7 @@
 
 ![Am I Responsive](assets/images/am-i-responsive.png)
 
-<h3> Introduction </h3>
+## Introduction
 
     Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your knowledge of video games. 
     The game presents players with a series of 10 multiple-choice questions 
@@ -10,13 +10,12 @@
     The faster and more accurately they answer, the higher their score!
 
 The Colors I went with are :
-![Color Palette](assets/images/color-palette.png)
-
-<br/>
+![Color Palette](assets/images/palette.png)
 
 ## Table of Contents
 
 - [Controller Chronicles: Gaming Quiz](#controller-chronicles-gaming-quiz)
+  - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Wireframes](#wireframes)
   - [Features](#features)
@@ -39,15 +38,11 @@ The Colors I went with are :
     - [Media](#media)
   - [Acknowledgements](#acknowledgements)
 
-<br/>
-
 ## Wireframes
 
      The wireframes below is of the website.
 
 - [wireframes](assets/images/wireframes/project-2.pdf)
-
-<br/>
 
 ## Features
 
@@ -57,32 +52,27 @@ The Colors I went with are :
      A timer of 10 seconds for each question.      
 ![timer](assets/images/question.png)
 
-<br/>
-
      Automatic progression to the next question when the time elapses. 
 ![next-question](assets/images/next-question.png)
 
      Real-time score tracking.  
 
 ![score](assets/images/score.png)
-<br/>
 
      Username input for submitting high scores to the leaderboard. 
 ![username](assets/images/username.png)
-<br/>
 
     Leaderboard to display the top 10 high scores achieved by players.
 ![leaderboard](assets/images/leaderboard.png)
-<br/>
 
     Responsive design for seamless gameplay on different devices.
 ![responsive](assets/images/responsive-design.png)
-<br/>
 
 ## UX Design
 
-<h3>I have focused on providing an engaging and intuitive user experience for Controller Chronicles.</h3>
-Some of the key design considerations include:
+- I have focused on providing an engaging and intuitive user experience for Controller Chronicles.
+
+    Some of the key design considerations include:
 
     1. A clear and prominent "Start Quiz" button to encourage users to begin the quiz.
     2. Visual feedback for the timer, showing the time left for each question.
@@ -92,21 +82,15 @@ Some of the key design considerations include:
 
 ### Future Enhancements
 
-<blockquote>
-
      Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
      Sound Effects and Music: Enhance the user experience by adding sound effects for correct and incorrect answers.
      Accessibility: Ensure the quiz is accessible to all users.
      Review Incorrect Answers: Allow players to review their incorrect answers after completing the quiz for a learning experience.
      Randomized Questions: Randomize the order of questions to ensure a unique experience for each quiz attempt.
 
-</blockquote>
-
 ## Technologies Used
 
 The game is built using the following technologies:
-
-<blockquote>
 
 - **HTML5** - The markup language used for structuring the website.
 - **CSS3** - The stylesheet language used for styling the website.
@@ -114,8 +98,6 @@ The game is built using the following technologies:
 - **Open Trivia Database API** - Provides quiz questions related to gaming.
 - **Font Awesome** - A library of icons used for visual enhancements.
 - **Google Fonts** - Provides custom fonts for the website, improving the typography.
-
-</blockquote>
 
 ## Testing
 
