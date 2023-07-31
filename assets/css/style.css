@@ -1,3 +1,4 @@
+/* Body styles */
 body {
     font-family: Rubik, sans-serif;
     font-size: 16px;
@@ -9,6 +10,7 @@ body {
     height: 100vh;
 }
 
+/* Header styles */
 h1 {
     font-family: Spectral, serif;
     font-size: 46px;
@@ -19,6 +21,7 @@ h2 {
     font-family: Spectral, serif;
 }
 
+/* Main container styles */
 .container {
     position: relative;
     max-width: 600px;
@@ -28,6 +31,7 @@ h2 {
     background-color: rgb(218, 134, 213);
 }
 
+/* Timer styles */
 #timer {
     position: absolute;
     /* Position the timer */
@@ -36,11 +40,13 @@ h2 {
     font-size: 16px;
 }
 
+/* Question container styles */
 #question-container {
     text-align: left;
     margin-bottom: 30px;
 }
 
+/* Answer button styles */
 #answer-buttons {
     list-style-type: none;
     padding: 0;
@@ -73,6 +79,7 @@ h2 {
     background-color: #e0e0e0;
 }
 
+/* Next button styles */
 .next-btn {
     display: block;
     width: 100%;
@@ -90,6 +97,7 @@ h2 {
     background-color: rgba(105, 167, 210, 0.973);
 }
 
+/* Submit button styles */
 #submit-button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -101,6 +109,7 @@ h2 {
     cursor: pointer;
 }
 
+/* Result styles */
 #result {
     margin-top: 20px;
     font-size: 18px;
@@ -109,6 +118,7 @@ h2 {
 }
 
 
+/* Start and Start Quiz button styles */
 #start-button {
     margin: 0;
     position: absolute;
@@ -126,6 +136,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+/* Footer styles */
 .footer {
     position: absolute;
     bottom: 15px;
@@ -153,7 +164,7 @@ h2 {
     font-size: 18px;
 }
 
-/* Space and style the buttons */
+/* Button container styles */
 .button-container {
     display: flex;
     justify-content: space-between;
