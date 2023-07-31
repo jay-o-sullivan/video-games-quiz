@@ -2,20 +2,19 @@
 
 ![Am I Responsive](assets/images/am-i-responsive.png)
 
-## Introduction
+[Controller Chronicles: Gaming Quiz Live Site](https://jay-o-sullivan.github.io/video-games-quiz/)
 
     Controller Chronicles: Gaming Quiz is an interactive quiz game that tests your knowledge of video games. 
     The game presents players with a series of 10 multiple-choice questions 
     related to video games, and they must answer each question within a time limit. 
     The faster and more accurately they answer, the higher their score!
 
-The Colors I went with are :
+The Colors I went with:
 ![Color Palette](assets/images/palette.png)
 
 ## Table of Contents
 
 - [Controller Chronicles: Gaming Quiz](#controller-chronicles-gaming-quiz)
-  - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Wireframes](#wireframes)
   - [Features](#features)
@@ -24,6 +23,14 @@ The Colors I went with are :
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [User Stories](#user-stories)
+  - [Issues Fixed](#issues-fixed)
+  - [Manual Testing](#manual-testing)
+    - [Start Quiz](#start-quiz)
+    - [Rules](#rules)
+    - [Questions](#questions)
+    - [Create Username](#create-username)
+    - [Restart Button](#restart-button)
+    - [Leaderboard Button](#leaderboard-button)
   - [Validators Used](#validators-used)
   - [Getting Started](#getting-started)
   - [Demo](#demo)
@@ -68,6 +75,9 @@ The Colors I went with are :
     Responsive design for seamless gameplay on different devices.
 ![responsive](assets/images/responsive-design.png)
 
+    Open Trivia DB API for free user contributed questions.
+![api](assets/images/API.png)
+
 ## UX Design
 
 - I have focused on providing an engaging and intuitive user experience for Controller Chronicles.
@@ -82,11 +92,11 @@ The Colors I went with are :
 
 ### Future Enhancements
 
-     Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
-     Sound Effects and Music: Enhance the user experience by adding sound effects for correct and incorrect answers.
-     Accessibility: Ensure the quiz is accessible to all users.
-     Review Incorrect Answers: Allow players to review their incorrect answers after completing the quiz for a learning experience.
-     Randomized Questions: Randomize the order of questions to ensure a unique experience for each quiz attempt.
+- 1. Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
+- 2. Sound Effects and Music: Enhance the user experience by adding sound effects for correct and incorrect answers.
+- 3. Accessibility: Ensure the quiz is accessible to all users.
+- 4. Review Incorrect Answers: Allow players to review their incorrect answers after completing the quiz for a learning experience.
+- 5. Randomized Questions: Randomize the order of questions to ensure a unique experience for each quiz attempt.
 
 ## Technologies Used
 
@@ -110,6 +120,51 @@ The game is built using the following technologies:
 - As a player, I want to receive instant feedback on my quiz performance and see the correct answers for any questions I miss.
 - As a quiz participant, I want the option to submit my score and see it displayed on the leaderboard.
 
+## Issues Fixed
+
+| Issues                                | Fixed  |
+| ---                                   |  ---   |
+| Removed syntax errors in readme file. | yes   |
+| Fixed Quiz not ending                 | yes   |
+| Corrected the HREF links              | yes   |
+| Removed Duplicate Images              | yes   |
+
+## Manual Testing
+
+### Start Quiz
+
+- Checked Start button.
+- Once pressed it functions correctly.
+- Tested in different devices.
+
+### Rules
+
+- Checked all text content works accordinally.
+- Checked the start quiz button and works correctly.
+- Tested in different devices.
+
+### Questions
+
+- Checked questions contents all work accordinally.
+- Checked timer.
+- Checked if no answer is selected and time runs out quiz ends.
+- Tested in different devices.
+
+### Create Username
+
+- Checked create username and it functions correctly.
+- Tested in different devices.
+
+### Restart Button
+
+- Checked restart button and functions correctly.
+- Tested in different devices.
+
+### Leaderboard Button
+
+- Checked leaderboard button and functions correctly.
+- Tested in different devices.
+  
 ## Validators Used
 
 - [JSvalidator](https://jsvalidator.com/)
@@ -178,7 +233,8 @@ There is different approaches should you choose to use GitPod to clone the proje
 4. Set the working directory to location.
 5. Type in "git clone" followed by the URL. Make sure to include a space after git clone for the url,   press enter.
 6. Project created.
-For more information on [GitHub](https://docs.github.com/en)
+For more information on
+[GitHub](https://docs.github.com/en)
 
 ## API
 
@@ -193,7 +249,8 @@ Controller Chronicles fetches quiz questions from the Open Trivia Database API. 
 - [Youtube](https://www.youtube.com/watch?v=-cX5jnQgqSM) Open API
 - [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo) Timer
 - [Coolors](https://coolors.co) Color Palette
-
+- [Open Trivia DB](https://opentdb.com/api_config.php)
+  
 ### Media
 
 The photo used in this site were obtained from:
@@ -202,8 +259,8 @@ The photo used in this site were obtained from:
 
 ## Acknowledgements
 
-- [W3 Schools](https://www.w3schools.com/)  
-- [TingPNG](https://tinypng.com/)  image resizing
-- [GitHub](https://github.com/jay-o-sullivan/ms2Project/edit/main/README.md)  README template
-- Student Support
-- Mentor
+- [W3 Schools](https://www.w3schools.com/).
+- [TingPNG](https://tinypng.com/).  
+- [GitHub](https://github.com/jay-o-sullivan/ms2Project/edit/main/README.md).
+- Student Support.
+- Mitko Bachvarov Mentor.
