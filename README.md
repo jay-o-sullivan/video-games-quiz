@@ -55,7 +55,7 @@
 ![question](assets/images/question.png)
 
      A timer of 10 seconds for each question.      
-![timer](assets/images/question.png)
+![timer](assets/images/timer.png)
 
      Automatic progression to the next question when the time elapses. 
 ![next-question](assets/images/next-question.png)
