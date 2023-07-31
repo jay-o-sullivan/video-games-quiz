@@ -9,8 +9,6 @@
     related to video games, and they must answer each question within a time limit. 
     The faster and more accurately they answer, the higher their score!
 
-The Colors I went with:
-![Color Palette](assets/images/palette.png)
 
 ## Table of Contents
 
@@ -18,8 +16,8 @@ The Colors I went with:
   - [Table of Contents](#table-of-contents)
   - [Wireframes](#wireframes)
   - [Features](#features)
-  - [UX Design](#ux-design)
     - [Future Enhancements](#future-enhancements)
+  - [UX/UI Design](#ux-design)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [User Stories](#user-stories)
@@ -36,7 +34,7 @@ The Colors I went with:
   - [Demo](#demo)
     - [How To Play](#how-to-play)
   - [Deployment](#deployment)
-    - [GitPod](#gitpod)
+    - [Codeanwhere](#codeanywhere)
   - [Run code locally](#run-code-locally)
   - [Cloning](#cloning)
   - [API](#api)
@@ -78,7 +76,19 @@ The Colors I went with:
     Open Trivia DB API for free user contributed questions.
 ![api](assets/images/API.png)
 
-## UX Design
+
+### Future Enhancements
+
+- 1. Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
+- 2. Sound Effects and Music: Enhance the user experience by adding sound effects for correct and incorrect answers.
+- 3. Accessibility: Ensure the quiz is accessible to all users.
+- 4. Review Incorrect Answers: Allow players to review their incorrect answers after completing the quiz for a learning experience.
+- 5. Randomized Questions: Randomize the order of questions to ensure a unique experience for each quiz attempt.
+
+## UX/UI Design
+
+The Colors I went with:
+![Color Palette](assets/images/palette.png)
 
 - I have focused on providing an engaging and intuitive user experience for Controller Chronicles.
 
@@ -89,14 +99,6 @@ The Colors I went with:
     3. Visual indicators for correct and incorrect answers.
     4. A result popup that displays the user's score and invites them to submit their username for the leaderboard.
     5. A dedicated leaderboard popup with a clean presentation of the top 10 high scores.
-
-### Future Enhancements
-
-- 1. Difficulty Levels: Introduce different difficulty levels for the quiz, such as easy, medium, and hard.
-- 2. Sound Effects and Music: Enhance the user experience by adding sound effects for correct and incorrect answers.
-- 3. Accessibility: Ensure the quiz is accessible to all users.
-- 4. Review Incorrect Answers: Allow players to review their incorrect answers after completing the quiz for a learning experience.
-- 5. Randomized Questions: Randomize the order of questions to ensure a unique experience for each quiz attempt.
 
 ## Technologies Used
 
@@ -201,7 +203,7 @@ To see the live demo of the game, visit [Controller Chronicles: Gaming Quiz Demo
 
 The website was created using [CodeAnywhere](https://codeanywhere.com/).
 
-### GitPod
+### Codeanywhere
 
 - In GitPod, ensure that all required items have been committed and pushed to GitHub.
 - Sign in to GitHub.
